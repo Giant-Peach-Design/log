@@ -1,6 +1,6 @@
 <?php
 
-namespace Psr\Log;
+namespace Gpsr\Log;
 
 class InvalidArgumentException extends \InvalidArgumentException
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Psr\Log;
+namespace Gpsr\Log;
 
 /**
  * Describes a logger instance.
@@ -119,7 +119,7 @@ interface LoggerInterface
      *
      * @return void
      *
-     * @throws \Psr\Log\InvalidArgumentException
+     * @throws \Gpsr\Log\InvalidArgumentException
      */
     public function log($level, string|\Stringable $message, array $context = []): void;
 }
