@@ -1,6 +1,6 @@
 <?php
 
-namespace Psr\Log\Test;
+namespace Gpsr\Log\Test;
 
 /**
  * This class is internal and does not follow the BC promise.

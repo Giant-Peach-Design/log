@@ -1,9 +1,9 @@
 <?php
 
-namespace Psr\Log\Test;
+namespace Gpsr\Log\Test;
 
-use Psr\Log\LoggerInterface;
-use Psr\Log\LogLevel;
+use Gpsr\Log\LoggerInterface;
+use Gpsr\Log\LogLevel;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -32,7 +32,7 @@ abstract class LoggerInterfaceTest extends TestCase
 
     public function testImplements()
     {
-        $this->assertInstanceOf('Psr\Log\LoggerInterface', $this->getLogger());
+        $this->assertInstanceOf('Gpsr\Log\LoggerInterface', $this->getLogger());
     }
 
     /**
@@ -45,8 +45,8 @@ abstract class LoggerInterfaceTest extends TestCase
         $logger->log($level, $message, array('user' => 'Bob'));
 
         $expected = array(
-            $level.' message of level '.$level.' with context: Bob',
-            $level.' message of level '.$level.' with context: Bob',
+            $level . ' message of level ' . $level . ' with context: Bob',
+            $level . ' message of level ' . $level . ' with context: Bob',
         );
         $this->assertEquals($expected, $this->getLogs());
     }
@@ -66,7 +66,7 @@ abstract class LoggerInterfaceTest extends TestCase
     }
 
     /**
-     * @expectedException \Psr\Log\InvalidArgumentException
+     * @expectedException \Gpsr\Log\InvalidArgumentException
      */
     public function testThrowsOnInvalidLevel()
     {
@@ -86,9 +86,9 @@ abstract class LoggerInterfaceTest extends TestCase
     public function testObjectCastToString()
     {
         if (method_exists($this, 'createPartialMock')) {
-            $dummy = $this->createPartialMock('Psr\Log\Test\DummyTest', array('__toString'));
+            $dummy = $this->createPartialMock('Gpsr\Log\Test\DummyTest', array('__toString'));
         } else {
-            $dummy = $this->getMock('Psr\Log\Test\DummyTest', array('__toString'));
+            $dummy = $this->getMock('Gpsr\Log\Test\DummyTest', array('__toString'));
         }
         $dummy->expects($this->once())
             ->method('__toString')

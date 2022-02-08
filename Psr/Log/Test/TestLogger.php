@@ -1,8 +1,8 @@
 <?php
 
-namespace Psr\Log\Test;
+namespace Gpsr\Log\Test;
 
-use Psr\Log\AbstractLogger;
+use Gpsr\Log\AbstractLogger;
 
 /**
  * Used for testing purposes.
