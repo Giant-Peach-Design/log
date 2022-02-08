@@ -1,6 +1,6 @@
 <?php
 
-namespace Gpsr\Log;
+namespace GPsr\Log;
 
 /**
  * This Logger can be used to avoid conditional log calls.
@@ -21,7 +21,7 @@ class NullLogger extends AbstractLogger
      *
      * @return void
      *
-     * @throws \Gpsr\Log\InvalidArgumentException
+     * @throws \GPsr\Log\InvalidArgumentException
      */
     public function log($level, $message, array $context = array())
     {

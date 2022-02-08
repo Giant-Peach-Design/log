@@ -1,6 +1,6 @@
 <?php
 
-namespace Gpsr\Log;
+namespace GPsr\Log;
 
 /**
  * Describes a logger-aware instance.

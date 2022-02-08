@@ -19,7 +19,7 @@ If you need a logger, you can use the interface like this:
 ```php
 <?php
 
-use Gpsr\Log\LoggerInterface;
+use GPsr\Log\LoggerInterface;
 
 class Foo
 {
@@ -50,6 +50,6 @@ class Foo
 You can then pick one of the implementations of the interface to get a logger.
 
 If you want to implement the interface, you can require this package and
-implement `Gpsr\Log\LoggerInterface` in your code. Please read the
+implement `GPsr\Log\LoggerInterface` in your code. Please read the
 [specification text](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-3-logger-interface.md)
 for details.

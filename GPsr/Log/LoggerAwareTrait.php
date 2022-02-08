@@ -1,6 +1,6 @@
 <?php
 
-namespace Gpsr\Log;
+namespace GPsr\Log;
 
 /**
  * Basic Implementation of LoggerAwareInterface.

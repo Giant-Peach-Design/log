@@ -1,9 +1,9 @@
 <?php
 
-namespace Gpsr\Log\Test;
+namespace GPsr\Log\Test;
 
-use Gpsr\Log\LoggerInterface;
-use Gpsr\Log\LogLevel;
+use GPsr\Log\LoggerInterface;
+use GPsr\Log\LogLevel;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -32,7 +32,7 @@ abstract class LoggerInterfaceTest extends TestCase
 
     public function testImplements()
     {
-        $this->assertInstanceOf('Gpsr\Log\LoggerInterface', $this->getLogger());
+        $this->assertInstanceOf('GPsr\Log\LoggerInterface', $this->getLogger());
     }
 
     /**
@@ -66,7 +66,7 @@ abstract class LoggerInterfaceTest extends TestCase
     }
 
     /**
-     * @expectedException \Gpsr\Log\InvalidArgumentException
+     * @expectedException \GPsr\Log\InvalidArgumentException
      */
     public function testThrowsOnInvalidLevel()
     {
@@ -86,9 +86,9 @@ abstract class LoggerInterfaceTest extends TestCase
     public function testObjectCastToString()
     {
         if (method_exists($this, 'createPartialMock')) {
-            $dummy = $this->createPartialMock('Gpsr\Log\Test\DummyTest', array('__toString'));
+            $dummy = $this->createPartialMock('GPsr\Log\Test\DummyTest', array('__toString'));
         } else {
-            $dummy = $this->getMock('Gpsr\Log\Test\DummyTest', array('__toString'));
+            $dummy = $this->getMock('GPsr\Log\Test\DummyTest', array('__toString'));
         }
         $dummy->expects($this->once())
             ->method('__toString')
